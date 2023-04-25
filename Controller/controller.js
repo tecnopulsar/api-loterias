@@ -48,6 +48,7 @@ const postQuiniela_cdad = expressHandler(async (req, res) => {
     const scrapedQuiniela = {
       _id: parseInt($("Sorteo").text()),
       fecha: $("FechaSorteo").text(),
+      tipo: $("Modalidad").text(),
       suerte: {
         N01: $("Suerte").find("N01").text(),
         N02: $("Suerte").find("N02").text(),
