@@ -8,10 +8,10 @@ const app = express();
 connect();
 
 app.use(express.json());
-// app.use('/.netlify/functions/api',Router)
 
 app.use("/", Router);
 
 app.listen(process.env.PORT, () => {
   console.log("listen in :", process.env.PORT);
 });
+
