@@ -75,7 +75,7 @@ const postQuiniela_cdad = expressHandler(async (req, res) => {
     };
 
       // Almacenar en base de datos MongoDB
-      const quiniela_cdad_DB = await Quiniela_cdad.insertMany(scrapedQuiniela)
+      //const quiniela_cdad_DB = await Quiniela_cdad.insertMany(scrapedQuiniela)
 
     if (!quiniela_cdad_DB) {
       res.status(500).json({ "message": "Nothing Posted" });
